@@ -24,9 +24,9 @@ body{
 	float: right;
 }
 
-#firebaseui-spa {
+#btn-container {
 	position: absolute;
-	right: 0px;
+	right: 15px;
 	display: inline-flex;
 }
 
@@ -55,6 +55,7 @@ body{
 	text-align: center;
 	margin: auto;
 }
+
 #footer{
 	text-align: center;
 	margin: auto;

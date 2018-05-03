@@ -264,7 +264,7 @@ function Character(obj) {
       this.properties.health -= 1;
     }
 
-    if (this.properties.health <= 0 && this.properties.status.alive === true) {
+    if (this.properties.health <= 0 && this.properties.condition.alive === true) {
       this.die();
     } else if (this.properties.health < 15) {
       this.properties.condition.sick = true;
@@ -546,6 +546,7 @@ function Character(obj) {
 
   }
   this.walkCycle = walkImg;
+  console.log(this.properties);
   this.frontImage = petImgs[this.properties.stage];
   this.lastFrontImage = petImgs[this.properties.stage];
 }

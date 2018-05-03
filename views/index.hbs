@@ -1,0 +1,11 @@
+<div id="sketch-holder" class="col-md-12">
+</div>
+<!-- Auth handling JS should go at end to prevent element errors -->
+<script>
+  window.onload = function() {
+    var decodedJson = decodeURIComponent("{{{encodedJson}}}");
+    currUser = JSON.parse(decodedJson);
+    myChar = new Character(currUser.creature);
+  }
+</script>
+<!-- <script src="./server/app.js"></script> -->
